@@ -6,4 +6,5 @@
     <color name="colornop">#00000000</color>
     <color name="colorGrey">#20000000</color>
     <color name="colorBlack">#80000000</color>
+    <color name="colorWhite">#FFFFFF</color>
 </resources>
