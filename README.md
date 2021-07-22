@@ -1,5 +1,9 @@
 # Android-2021-finalapp
 
-Final文件夹中为最终版本的代码
+buding\Wop	为最终代码
 
-building文件夹中存放了代码，图片资源和开发日志
+buding\png	为图片资源
+
+buding\开发日志	为开发日志
+
+小组成员：陶禹升3190103050

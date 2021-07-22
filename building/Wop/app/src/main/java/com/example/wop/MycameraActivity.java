@@ -123,7 +123,6 @@ public class MycameraActivity extends AppCompatActivity implements SurfaceHolder
                 videoView.setVisibility(View.GONE);
                 btnYes.setVisibility(View.GONE);
                 btnNo.setVisibility(View.GONE);
-                imgDot.setVisibility(View.VISIBLE);
                 if (request == REQUEST_CODE_COVER_TAKEIMAGE) btnPhoto.setVisibility(View.VISIBLE);
                 else btnVideo.setVisibility(View.VISIBLE);
             }
