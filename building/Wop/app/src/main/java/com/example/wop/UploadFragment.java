@@ -198,15 +198,18 @@ public class UploadFragment extends Fragment{
         byte[] ImageData = readDataFromUri(ImageUri);
         if (ImageData == null || ImageData.length == 0) {
             Toast.makeText(getActivity(), "未设置封面", Toast.LENGTH_SHORT).show();
+            resetloadanimation(0);
             return;
         }
         byte[] VideoData = readDataFromUri(VideoUri);
         if (VideoData == null || VideoData.length == 0) {
             Toast.makeText(getActivity(), "未设置视频", Toast.LENGTH_SHORT).show();
+            resetloadanimation(0);
             return;
         }
         if ( ImageData.length+VideoData.length >= MAX_FILE_SIZE) {
-            Toast.makeText(getActivity(), "封面文件过大", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), "文件过大", Toast.LENGTH_SHORT).show();
+            resetloadanimation(0);
             return;
         }
         Log.d("upload", "submit: 0    imageuri:  "+ImageUri+"  videouri:  "+VideoUri);
